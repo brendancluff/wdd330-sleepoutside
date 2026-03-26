@@ -1,0 +1,24 @@
+[
+  {
+    "Id": "880RR",
+    "Name": "ENO DoubleNest Hammock",
+    "DescriptionHtmlSimple": "Relax in comfort with this durable and lightweight hammock.",
+    "Brand": { "Name": "ENO" },
+    "Images": {
+      "PrimaryMedium": "/images/hammocks/eno-double-nest-hammock~p~340dd_01~320.jpg"
+    },
+    "FinalPrice": 69.95,
+    "NameWithoutBrand": "DoubleNest Hammock"
+  },
+  {
+    "Id": "881RR",
+    "Name": "Kammok Roo Double Hammock",
+    "DescriptionHtmlSimple": "A versatile hammock built for adventure.",
+    "Brand": { "Name": "Kammok" },
+    "Images": {
+      "PrimaryMedium": "/images/hammocks/kammok-roo-double-hammock~p~340de_01~320.jpg"
+    },
+    "FinalPrice": 99.95,
+    "NameWithoutBrand": "Roo Double Hammock"
+  }
+]
