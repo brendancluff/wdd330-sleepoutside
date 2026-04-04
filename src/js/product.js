@@ -12,8 +12,8 @@ loadHeaderFooter();
 const productId = getParam("product");
 const category = getParam("category");
 
-const dataSource = new ProductData(category);
-const product = new ProductDetails(productId, dataSource);
+const dataSource = new ProductData();
+const product = new ProductDetails(productId, category, dataSource);
 
 product.init();
 

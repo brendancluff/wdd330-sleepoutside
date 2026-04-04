@@ -1,8 +1,8 @@
 import { renderListWithTemplate } from "./utils.mjs";
 
-function productTemplate(product, category) {
+function productTemplate(product) {
   return `<li class="product-card">
-    <a href="/product_pages/index.html?product=${product.Id}&category=${category}">
+    <a href="/product_pages/index.html?product=${product.Id}&category=${product.Category}">
       <img
         src="${product.Images.PrimaryMedium}"
         alt="${product.Name}"
@@ -22,12 +22,11 @@ export default class ProductList {
   }
 
   async init() {
-    const products = await this.dataSource.getData();
-    this.renderList(products);
+    const list = await this.dataSource.getData(this.category);
+    this.renderList(list);
   }
 
-  renderList(products) {
-    const template = (product) => productTemplate(product, this.category);
-    renderListWithTemplate(template, this.listElement, products);
+  renderList(list) {
+    renderListWithTemplate(productTemplate, this.listElement, list);
   }
 }
